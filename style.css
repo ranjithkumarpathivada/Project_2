@@ -104,6 +104,9 @@ main .content {
       animation: rot 7s linear infinite;
       z-index: -1;
     }
+    .rot-logo img:hover {
+      animation: rot 0.1s linear infinite;
+    }
   }
 }
 @keyframes rot {
@@ -120,6 +123,7 @@ footer {
   color: white;
   width: 100vw;
   display: flex;
+  font-weight: 1000;
   justify-content: center;
   background-color: #0f172b;
 }
@@ -132,6 +136,12 @@ footer div {
 .footer-div h2,
 h1 {
   display: inline-block;
+  color: orange;
+  text-transform: capitalize;
+}
+
+.footer-div h2 {
+  font-size: 23px;
 }
 .footer-div *:not(h2):not(h1) {
   padding-top: 10px;
@@ -146,17 +156,18 @@ h1 {
 
 .footer-div:nth-child(4) {
   width: 20%;
-  /* background-color: black; */
-  border: 2px solid black;
 }
 .footer-div:nth-child(4) #fs {
   background-color: white;
   width: 100%;
-  height: 30%;
+  height: 18%;
   padding-left: 0px;
   margin-left: 0px;
   display: flex;
-  justify-content: space-around;
+  align-items: center; /* Aligns items vertically */
+  gap: 10px; /* Adds space between input and button */
+  padding: 0; /* Removes padding */
+  margin: 0;
   .newip {
     width: 75%;
     border: none;
@@ -167,6 +178,13 @@ h1 {
   }
 }
 
-/* .footer-div:nth-child(4) #fs * {
-  height: 100%;
-} */
+.footer-div:nth-child(4) #fs {
+  margin-top: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bfd {
+  width: 100%;
+  height: 10px;
+}
