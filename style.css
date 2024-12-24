@@ -117,6 +117,49 @@ main .content {
     transform: rotate(360deg);
   }
 }
+.cards {
+  width: 100vw;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .card {
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 3px 10px rgb(215, 205, 204);
+    border-radius: 3px;
+    .card-image {
+      color: orange;
+      font-size: 50px;
+      margin-left: 20px;
+      font-weight: 1000;
+      margin-top: 25px;
+    }
+  }
+  .card-body {
+    .card-title {
+      margin-top: 20px;
+      font-size: 25px;
+      font-weight: 1000;
+    }
+    .card-text {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+  }
+  .card * {
+    margin-left: 10px;
+  }
+}
+
+.cards .card:hover {
+  background-color: orange;
+  transition: background-color 1s ease;
+  color: white;
+  .card-image {
+    color: white;
+  }
+}
 
 /* footer */
 footer {
